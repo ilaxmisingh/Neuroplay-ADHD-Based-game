@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Neuroplay</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" data-target="home-section">Home</a></li>
+                <li><a href="#contact-us" data-target="contact-section">Contact Us</a></li>
+                <li><a href="#about-us" data-target="about-section">About Us</a></li>
+                <li><a href="#login-register" data-target="login-section">Login/Register</a></li>
+                <li><a href="#add-new-game" data-target="add-new-game-section">Add New Game</a></li>
+            
+                <li><a href="#feedback-stories-section" data-target="feedback-stories-section">Feedback And Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div id="content">
+            <div id="left-side">
+                <section id="mind-game">
+                    <h2>ADHD MindGames</h2>
+                    <button onClick="location.href='https://adhd-game-pxfi.vercel.app/';">Start Game</button>
+                </section>
+                <section id="memory-game">
+                    <h2>Memory Game</h2>
+                    <button onClick="location.href='https://onlinematching-game.netlify.app/';">Start Game</button>
+                </section>
+              
+                    
+              
+            </div>
+           
+            
+        <div id="extra-sections">
+        <!-- Home Section -->
+<!-- Home Section -->
+<section id="home-section" class="expanded">
+    <h2>Home</h2>
+    <p>Welcome to our gaming website!</p>
+    <p>We are PESCIANS in our 3rd year of B.E. CSE Department at PES College of Engineering, Mandya. This project is part of our mini project for our course.</p>
+    <p>Our goal is to create engaging and fun gaming experiences tailored for individuals with ADHD. We hope you enjoy exploring our site and playing the games we've developed!</p>
+</section>
+
+
+<!-- Contact Us Section -->
+<section id="contact-section" class="expanded">
+    <h2>Contact Us</h2>
+    <p>Email: contact@neuroplay.com</p>
+    <p>Phone: +1234567890</p>
+    <p>For further inquiries or support related to our project, please reach out to us.</p>
+</section>
+
+            <section id="about-section" class="hidden">
+                <h2>About Us</h2>
+                <p>
+                    At NeuroPlay, our mission is to create engaging and accessible gaming experiences specifically designed for individuals with ADHD. We understand the unique challenges that come with ADHD and aim to provide a platform where users can enjoy a variety of games tailored to improve focus, cognitive skills, and overall well-being.
+                </p>
+                <p>
+                    Our games are carefully crafted to offer stimulating and enjoyable activities that cater to different attention spans and learning styles. Whether you’re looking for memory games, puzzles, or interactive challenges, NeuroPlay is dedicated to supporting you in a fun and inclusive way.
+                </p>
+                <p>
+                    Join us in our journey to make gaming a positive and enriching experience for everyone, especially those with ADHD.
+                </p>
+            </section>
+      <!-- Login/Register Section -->
+<section id="login-section" class="expanded">
+    <h2>Login/Register</h2>
+    <p>Login or register to save your game progress and access exclusive content.</p>
+  
+    <div class="button-group">
+        <button id="login-btn">Login</button>
+        <button id="register-btn">Register</button>
+    </div>
+    
+    <!-- Login Form -->
+    <div id="login-form" class="form-container hidden">
+        <h3>Login</h3>
+        <form id="login-form-content">
+            <label for="login-username">Username:</label>
+            <input type="text" id="login-username" name="username" required>
+            
+            <label for="login-password">Password:</label>
+            <input type="password" id="login-password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <!-- Registration Form -->
+    <div id="register-form" class="form-container hidden">
+        <h3>Register</h3>
+        <form id="register-form-content">
+            <label for="register-username">Username:</label>
+            <input type="text" id="register-username" name="username" required>
+            
+            <label for="register-email">Email:</label>
+            <input type="email" id="register-email" name="email" required>
+            
+            <label for="register-password">Password:</label>
+            <input type="password" id="register-password" name="password" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Feedback and Stories Section -->
+<section id="feedback-stories-section" class="expanded">
+    <h3>Feedback and Stories</h3>
+    <p>Read stories from our users and provide your feedback!</p>
+   
+    <div class="story">
+        <img src="img4.jpg" alt="Story 1">
+        <div class="story-content">
+            <h3>ADHD: HOW IT AFFECTS FAMILIES
+            </h3>
+            <p>ADHD – Attention Deficit Hyperactivity Disorder – usually brings with it a lot of frustration and blame. It can be difficult to get a diagnosis for your child and this can result in serious emotional and mental scars, both for your child and the wider family. When managed well, ADHD can be a gift, but […]</p>
+            <a href="http://adhdkids.org.uk/adhd-how-it-affects-families/" target="_blank">Read More</a>
+        </div>
+    </div>
+
+    <div class="story">
+        <img src="img3.jpg" alt="Story 2">
+        <div class="story-content">
+            <h3>HOW TO PREPARE YOUR ADHD KIDS FOR A TRANSITION
+            </h3>
+            <p>For many children – not just those with ADHD living in a structured environment and  following a consistent routine is important. Sometimes it may be a little difficult to encourage kids with ADHD to follow a certain routine but once they get into the habit of it, they can become so committed to it that […]</p>
+            <a href="http://adhdkids.org.uk/how-to-prepare-your-adhd-kids-for-a-transition/" target="_blank">Read More</a>
+        </div>
+    </div>
+    <
+</section>
+
+
+<!-- Add New Game Section -->
+<section id="add-new-game-section" class="expanded">
+    <h2>Add New Game</h2>
+    <p>Here you can add new games to our collection!</p>
+   
+    <div id="confirmation-message" class="hidden">
+        <p>Your request has been submitted. After approval, the game will be added to our collection!</p>
+    </div>
+    
+    <!-- Add your form or details for adding new games here -->
+    <form id="add-game-form">
+        <label for="game-title">Game Title:</label>
+        <input type="text" id="game-title" name="game-title" required>
+        
+        <label for="game-description">Game Description:</label>
+        <textarea id="game-description" name="game-description" required></textarea>
+        
+        <button type="submit">Add Game</button>
+    </form>
+</section>
+
+            
+            
+        </div>
+        
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gaming Website. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
